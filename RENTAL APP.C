@@ -1,25 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-void car_rent();
-void car_return();
-int main()
-{
-	int x;
-	printf("WELCOME TO CAR RENTAL SERVICE\n TO RENT\nPRESS 1\n TO RETURN\nPRESS 2\n ");
-	scanf("%d",&x);//'x'Receive The Input From Customer//
-	switch(x)
-	{
-		case 1: 
-		car_rent();
-			break;
-		case 2: 
-		car_return();
-			break;
-		default:
-		printf("WRONG CHOICE!! Try again.\n");	
-	}
-
-}
 void car_rent()
 {
     char car_Brand[10][20]={"HYUNDAI","SUZUKI","HONDA","TOYOTA","FORD","TATA","MERCEDES","AUDI","ISUZU"};//brands available is used to stored in array
@@ -54,4 +34,21 @@ void car_return()
 {
 	printf("car returned.\n");
 }
+int main()
+{
+	int x;
+	printf("WELCOME TO CAR RENTAL SERVICE\n TO RENT\nPRESS 1\n TO RETURN\nPRESS 2\n ");
+	scanf("%d",&x);//'x'Receive The Input From Customer//
+	switch(x)
+	{
+		case 1: 
+		car_rent();
+			break;
+		case 2: 
+		car_return();
+			break;
+		default:
+		printf("WRONG CHOICE!! Try again.\n");	
+	}
 
+}
